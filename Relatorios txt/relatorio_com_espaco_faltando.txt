@@ -1,0 +1,2 @@
+﻿NOME DO PROJETO: T-shirt RFID Patch Antenna
+RESUMO: Desenvolvimento de uma patch antenna RFID para aplicação em etiquetas de camisetas da empresa YYYY
