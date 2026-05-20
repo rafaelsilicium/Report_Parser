@@ -1,0 +1,4 @@
+NOME DO PROJETO: Silicon Wafer 300mm - Pureza de Cristal
+DATA: 12/05/2026
+STATUS: Concluído
+RESUMO: Implementação de novo método de resfriamento Czochralski resultou em wafers com menor densidade de oxigênio intersticial.

@@ -1,0 +1,4 @@
+NOME DO PROJETO: RISC-V IoT - Microcontrolador de Baixo Custo
+STATUS: Em Teste
+RESUMO: Validação de firmware em silício. Consumo em modo 'deep sleep' está dentro da meta de 500nA.
+DATA: NÃO INFORMADO

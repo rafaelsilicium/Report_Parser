@@ -1,0 +1,4 @@
+NOME DO PROJETO: GaN-Power - Semicondutores de Nitreto de Gálio
+DATA: 15/05/2026
+STATUS: Prototipagem
+RESUMO: Primeiro lote de transistores de potência GaN apresentou eficiência de conversão de 98% em carregadores rápidos de 100W.

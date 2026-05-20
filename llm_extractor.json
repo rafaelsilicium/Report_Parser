@@ -1,0 +1,68 @@
+﻿[
+    {
+        "nome_do_projeto": "T-shirt RFID Patch Antenna",
+        "data": "NÃO INFORMADO",
+        "status": "NÃO INFORMADO",
+        "resumo": "Desenvolvimento de uma patch antenna RFID para aplicação em etiquetas de camisetas da empresa YYYY"
+    },
+    {
+        "nome_do_projeto": "ARM-Automotive - Chip para Condução Autônoma",
+        "data": "13/05/2026",
+        "status": "Planejamento",
+        "resumo": "Definição de requisitos de redundância de hardware e segurança funcional (ISO 26262) para a próxima geração de SoCs automotivos."
+    },
+    {
+        "nome_do_projeto": "GaN-Power - Semicondutores de Nitreto de Gálio",
+        "data": "15/05/2026",
+        "status": "Prototipagem",
+        "resumo": "Primeiro lote de transistores de potência GaN apresentou eficiência de conversão de 98% em carregadores rápidos de 100W."
+    },
+    {
+        "nome_do_projeto": "HBM3 Memory - Interface de Memória de Alta Largura de Banda",
+        "data": "17/05/2026",
+        "status": "Em Desenvolvimento",
+        "resumo": "Desenvolvimento de interposer de silício para integração com GPUs de IA. Testes térmicos iniciais indicam necessidade de heat spreaders avançados."
+    },
+    {
+        "nome_do_projeto": "Lithos - Otimização de Fotolitografia EUV",
+        "data": "11/05/2026",
+        "status": "Em Teste",
+        "resumo": "Testes com novas máscaras de quartzo mostraram redução de 12% em defeitos de borda. Ajustando parâmetros de exposição para produção em massa."
+    },
+    {
+        "nome_do_projeto": "NAND 3D - Empilhamento de 232 Camadas",
+        "data": "14/05/2026",
+        "status": "Em Desenvolvimento",
+        "resumo": "Superados desafios de integridade estrutural no empilhamento vertical. Foco atual na redução da latência de leitura em 15%."
+    },
+    {
+        "nome_do_projeto": "RISC-V IoT - Microcontrolador de Baixo Custo",
+        "data": "NÃO INFORMADO",
+        "status": "Em Teste",
+        "resumo": "Validação de firmware em silício. Consumo em modo 'deep sleep' está dentro da meta de 500nA."
+    },
+    {
+        "nome_do_projeto": "Sensor CMOS - Ultra Alta Resolução",
+        "data": "18/05/2026",
+        "status": "Planejamento",
+        "resumo": "Estudo de viabilidade para pixels de 0.6 micrometros com tecnologia de isolamento de trincheira profunda (DTI)."
+    },
+    {
+        "nome_do_projeto": "Silicon Wafer 300mm - Pureza de Cristal",
+        "data": "12/05/2026",
+        "status": "Concluído",
+        "resumo": "Implementação de novo método de resfriamento Czochralski resultou em wafers com menor densidade de oxigênio intersticial."
+    },
+    {
+        "nome_do_projeto": "Projeto Titan - Nova Arquitetura de Processador 5nm",
+        "data": "10/05/2026",
+        "status": "Em Desenvolvimento",
+        "resumo": "A fase de design lógico foi concluída. Iniciando a validação de timing e otimização de consumo energético para dispositivos móveis."
+    },
+    {
+        "nome_do_projeto": "Wafer Sorting - IA no Controle de Qualidade",
+        "data": "19/05/2026",
+        "status": "Concluído",
+        "resumo": "Implementação de algoritmos de visão computacional reduziu o tempo de inspeção de defeitos em 40% com precisão de 99,8%."
+    }
+]

@@ -1,0 +1,4 @@
+NOME DO PROJETO: Wafer Sorting - IA no Controle de Qualidade
+DATA: 19/05/2026
+STATUS: Concluído
+RESUMO: Implementação de algoritmos de visão computacional reduziu o tempo de inspeção de defeitos em 40% com precisão de 99,8%.

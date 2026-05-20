@@ -1,0 +1,4 @@
+NOME DO PROJETO: NAND 3D - Empilhamento de 232 Camadas
+DATA: 14/05/2026
+STATUS: Em Desenvolvimento
+RESUMO: Superados desafios de integridade estrutural no empilhamento vertical. Foco atual na redução da latência de leitura em 15%.

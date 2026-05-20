@@ -1,0 +1,4 @@
+NOME DO PROJETO: Lithos - Otimização de Fotolitografia EUV
+DATA: 11/05/2026
+STATUS: Em Teste
+RESUMO: Testes com novas máscaras de quartzo mostraram redução de 12% em defeitos de borda. Ajustando parâmetros de exposição para produção em massa.

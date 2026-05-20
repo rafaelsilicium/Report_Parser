@@ -1,0 +1,4 @@
+NOME DO PROJETO: ARM-Automotive - Chip para Condução Autônoma
+DATA: 13/05/2026
+STATUS: Planejamento
+RESUMO: Definição de requisitos de redundância de hardware e segurança funcional (ISO 26262) para a próxima geração de SoCs automotivos.

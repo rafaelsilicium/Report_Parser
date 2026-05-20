@@ -1,0 +1,4 @@
+NOME DO PROJETO: Sensor CMOS - Ultra Alta Resolução
+DATA: 18/05/2026
+STATUS: Planejamento
+RESUMO: Estudo de viabilidade para pixels de 0.6 micrometros com tecnologia de isolamento de trincheira profunda (DTI).

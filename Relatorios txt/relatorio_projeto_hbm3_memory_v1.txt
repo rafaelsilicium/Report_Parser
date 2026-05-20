@@ -1,0 +1,4 @@
+NOME DO PROJETO: HBM3 Memory - Interface de Memória de Alta Largura de Banda
+DATA: 17/05/2026
+STATUS: Em Desenvolvimento
+RESUMO: Desenvolvimento de interposer de silício para integração com GPUs de IA. Testes térmicos iniciais indicam necessidade de heat spreaders avançados.
