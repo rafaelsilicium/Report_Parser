@@ -41,7 +41,7 @@ gemini_reply =client_gemini.models.generate_content(
 
 #apresenta o texto da resposta recebida
 print("Resposta Gemini API:\n" )
-print(gemini_reply.text)
+print(gemini_reply)
 
 try:
     #cria ou modifica um arquivo json contendo a resposta retornada da API 
