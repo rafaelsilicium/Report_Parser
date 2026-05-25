@@ -1,0 +1,9 @@
+model_list:
+  - model_name: gemini-2.5-flash
+    litellm_params:
+      model: gemini/gemini-2.5-flash
+    api_key: "AIzaSyBn7TOh5fLgcjDHUBk9OS6Sn2k1zKTz--M"
+
+itellm_settings:
+  drop_params: true            # 👈 Ignora parâmetros desconhecidos
+  modify_params: true          # Permite adaptar os parâmetros
