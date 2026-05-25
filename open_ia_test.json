@@ -1,0 +1,26 @@
+﻿[
+    {
+        "nome_jogador": "Sergio Rochet",
+        "posicao": "Goleiro",
+        "idade": 33,
+        "nacionalidade": "Uruguaia"
+    },
+    {
+        "nome_jogador": "Vitão",
+        "posicao": "Defensor",
+        "idade": 26,
+        "nacionalidade": "Brasileira"
+    },
+    {
+        "nome_jogador": "Alan Patrick",
+        "posicao": "Meio-campo",
+        "idade": 35,
+        "nacionalidade": "Brasileira"
+    },
+    {
+        "nome_jogador": "Rafael Santos Borré",
+        "posicao": "Atacante",
+        "idade": 30,
+        "nacionalidade": "Colombiana"
+    }
+]
