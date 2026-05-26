@@ -70,9 +70,9 @@ def leitura_arquivos_txt():
 
             headers_ausentes = verifica_headers_ausentes(conteudo_relatorio)
             if len(headers_ausentes) != 0:
-                #O código atualiza os relatorios txt incompletos, criando campos "NÃO INFORMADO" nas informações ausentes.]
-                #Essa decisão foi tomada para facilitar a criação do csv, sendo o método que o dev conseguiu implementar na
-                #versão do código. 
+                # O código atualiza os relatorios txt incompletos, criando campos "NÃO INFORMADO" nas informações ausentes.]
+                # Essa decisão foi tomada para facilitar a criação do csv, sendo o método que o dev conseguiu implementar na
+                # versão do código.
                 atualiza_txt_incompleto(arquivo_relatorio, headers_ausentes)
                 conteudo_relatorio = atualiza_leitura_relatorio(arquivo_relatorio)
 
