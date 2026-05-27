@@ -76,12 +76,34 @@ def organiza_conteudo_txt_em_dicionario(
     return conteudos_separados
 
 
-def leitura_relatorio(arquivo_relatorio):
+def leitura_relatorio(arquivo_relatorio: Path) -> list[str]:
+    """
+    Lê o conteúdo de um arquivo de relatório e retorna uma lista com suas linhas.
+
+    Args:
+        arquivo_relatorio (Path): Caminho para o arquivo de relatório.
+
+    Returns:
+        list[str]: Lista contendo as linhas do conteúdo do relatório.
+    """
 
     return arquivo_relatorio.read_text(encoding="utf-8-sig").splitlines()
 
 
-def leitura_arquivos_txt(path_relatorios, headers):
+def leitura_arquivos_txt(
+    path_relatorios: Path, headers: list[str]
+) -> list[dict[str, str]]:
+    """
+    Lê os arquivos de relatório em um diretório, verifica a presença dos headers e
+    organiza o conteúdo em dicionários.
+
+    Args:
+    path_relatorios (Path): Caminho para o diretório contendo os arquivos .txt de relatório.
+        headers (list[str]): Lista com os headers a serem verificados em cada arquivo .txt.
+
+    Returns:
+        list[dict[str, str]]: Lista de dicionários com os dados organizados.
+    """
 
     conteudos_agrupados = []
     print("\nIniciando a leitura dos arquivos .txt\n")
@@ -109,13 +131,39 @@ def leitura_arquivos_txt(path_relatorios, headers):
     return conteudos_agrupados
 
 
-def insere_headers_csv(planilha_csv, headers):
+def insere_headers_csv(planilha_csv: Path, headers: list[str]) -> None:
+    """
+    Insere os headers no arquivo .csv, caso o arquivo esteja vazio.
+
+    Args:
+        planilha_csv (Path): Caminho para o arquivo .csv onde os headers serão inseridos.
+        headers (list[str]): Lista com os headers a serem inseridos no arquivo .csv.
+
+    Returns:
+        None
+
+    """
+
     dicionar_headers = csv.writer(planilha_csv, delimiter=";")
     dicionar_headers.writerow(headers)
     print("\nCabeçalho do arquivo .csv adicionado!")
 
 
-def cria_arquivo_csv(path_arquivo_csv, dados_parser, headers):
+def cria_arquivo_csv(
+    path_arquivo_csv: Path, dados_parser: list, headers: list[str]
+) -> None:
+    """
+    Cria ou edita um arquivo .csv com os dados extraídos dos relatórios, organizados em dicionários.
+
+    Args:
+        path_arquivo_csv (Path): Caminho para o arquivo .csv onde os dados serão armazenados.
+        dados_parser (list): Lista de dicionários contendo os dados organizados dos relatórios
+        headers (list[str]): Lista com os headers a serem utilizados como colunas no arquivo .csv.
+
+    Returns:
+        None
+
+    """
 
     try:
         with open(
@@ -129,16 +177,24 @@ def cria_arquivo_csv(path_arquivo_csv, dados_parser, headers):
             editar_csv.writerows(dados_parser)
             print("\nEdição do arquivo .csv finalizada!")
 
-    except FileNotFoundError:
-        print("Erro! O arquivo .csv indicado não existe!")
+    except (FileNotFoundError, PermissionError) as erro:
+        print(
+            f"Erro! Não foi possível abrir o arquivo .csv! Edição não realizada! Erro: {erro}"
+        )
 
     except Exception as erro:
         print(
-            f"\nErro! Não foi possível abrir o arquivo .csv! \nA edição não foi realizada! Erro: {erro}"
+            f"\nErro! Um erro inesperado aconteceu! \nEdição não realizada! Erro: {erro}"
         )
 
 
 def main():
+    """
+    Este é o ponto inicial do código. Ele define os caminhos para os arquivos e diretórios,
+    os headers a serem extraídos, e coordena a execução das funções para ler os arquivos .txt,
+    verificar os headers, organizar os dados e criar o arquivo .csv com os resultados.
+
+    """
 
     path_arquivo_csv = Path(
         "C:/Users/rafsc/OneDrive/Área de Trabalho/Relatorios txt/projetos.csv"
