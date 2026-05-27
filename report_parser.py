@@ -1,18 +1,67 @@
+"""
+Report Parser V2
+Autor: Rafael R. Schaeffer
+
+Descrição:
+Este script tem como objetivo ler arquivos de texto (.txt) contendo relatórios, extrair informações
+específicas com base em headers pré-definidos, organizar esses dados extraídos e exportar
+os resultados para um arquivo CSV (.csv).
+
+Instruções de Uso:
+1. Defina o caminho para o diretório onde os arquivos .txt estão localizados,
+    bem como o caminho para o arquivo .csv onde os dados extraídos serão armazenados.
+2. Atualize a lista de headers com os títulos específicos que você deseja extrair dos relatórios.
+3. Execute o script. Ele lerá os arquivos .txt, verificará a presença dos
+    headers, organizará os dados em um dicionário e exportará para o arquivo .csv.
+
+Observações: O script inclui tratamento de erros para lidar com situações como arquivos ausentes,
+erros de leitura/escrita e outros problemas inesperados que possam ocorrer durante a execução.
+Certifique-se de que os arquivos .txt estejam formatados corretamente, com os headers
+seguidos por um ":" e o conteúdo correspondente. Headers ausentes serão marcados
+como "NÃO INFORMADO" no arquivo .csv resultante.
+
+"""
+
 from pathlib import Path
 import csv
 
 
-def verifica_headers_ausentes(conteudo_relatorio, headers):
+def verifica_headers_ausentes(
+    conteudo_relatorio: list[str], headers: list[str]
+) -> list[str]:
+    """
+    Verifica quais headers estão ausentes no conteúdo do relatório.
 
+    Args:
+        conteudo_relatorio (list[str]): Lista com linhas do conteúdo do relatório.
+        headers (list[str]): Lista com os headers a serem verificados.
+
+    Returns:
+        list[str]: Lista com os headers ausentes.
+    """
     headers_ausentes = []
     for header in headers:
-        if not (any(header.strip() in linha for linha in conteudo_relatorio)):
+        if not any(header.strip() in linha for linha in conteudo_relatorio):
             headers_ausentes.append(header.strip())
 
     return headers_ausentes
 
 
-def organiza_conteudo_txt_em_dicionario(conteudo_relatorio, headers_ausentes):
+def organiza_conteudo_txt_em_dicionario(
+    conteudo_relatorio: list[str], headers_ausentes: list[str]
+) -> dict[str, str]:
+    """
+    Organiza o conteúdo do relatório em um dicionário, associando cada header
+    a seu conteúdo correspondente.
+
+    Args:
+        conteudo_relatorio (list[str]): Lista contendo o conteúdo do relatório separado por linhas.
+        headers_ausentes (list[str]): Lista com os headers ausentes no relatório.
+
+    Returns:
+        dict[str, str]: Dicionário com os headers como chaves e seus conteúdos como valores.
+
+    """
 
     conteudos_separados = {}
     for linha in conteudo_relatorio:
