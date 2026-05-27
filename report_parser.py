@@ -124,6 +124,13 @@ def leitura_arquivos_txt(
                         conteudo_relatorio, headers_ausentes
                     )
                 )
+        except (FileNotFoundError, PermissionError) as erro:
+            print(f"""Erro! Não foi possível abrir o arquivo {arquivo_relatorio}!
+                Leitura não realizada! Erro: {erro}""")
+
+        except UnicodeDecodeError as erro:
+            print(f"""Erro! O arquivo {arquivo_relatorio} não está codificado em UTF-8!
+                Leitura não realizada! Erro: {erro}""")
 
         except Exception as erro:
             print(f"Erro! Um erro inesperado aconteceu! Erro: {erro}")
